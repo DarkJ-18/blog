@@ -8,16 +8,15 @@ class PostController extends Controller
 {
     public function index()
     {
-        return "Pagina principal de los posts";
+        return view('posts.index');
+    }
+    public function create()
+    {
+        return view('posts.create');
     }
 
     public function show($post)
     {
-        return "Mostrando el post con id: {$post}";
-    }
-
-    public function create()
-    {
-        return "Creando un post";
+        return view('posts.show', ['post' => $post]);
     }
 }
