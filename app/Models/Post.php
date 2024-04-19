@@ -9,5 +9,5 @@ class Post extends Model
 {
     use HasFactory;
 
-    protected $table = 'posts';
+    protected $table = 'posts'; //si el modelo no se llama igual que la tabla, se debe especificar el nombre de la tabla
 }
