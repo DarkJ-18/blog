@@ -12,12 +12,12 @@ Route::get('/posts/{post}', [PostController::class, 'show']);
 
 Route::get('prueba', function () {
    // Crear un nuevo post
-   /* $post = new Post;
+   $post = new Post;
    $post->title = 'Mi primer post 1';
    $post->content = 'Contenido de mi primer post 1';
    $post->category = 'Categoria de prueba 1';
    $post->save(); 
-   return $post;*/
+   return $post;
 
    // Actualizar un registriso
    /*  $post = Post::find(1);
