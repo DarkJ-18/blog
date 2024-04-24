@@ -12,9 +12,9 @@ Route::get('/posts/{post}', [PostController::class, 'show']);
 
 Route::get('prueba', function () {
    // Crear un nuevo post
-   $post = Post::find(4);
+   $post = Post::find(1);
    
-   return $post;
+   dd($post->is_active); // true
 
 
 });
