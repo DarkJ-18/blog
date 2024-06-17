@@ -13,8 +13,11 @@ Route::get('/posts/{post}', [PostController::class, 'show']);
 
 Route::get('prueba', function () {
    // Crear un nuevo post
-   $user = User::find(1);
-   return $user->address; // Devuelve la dirección del usuario
+   // $user = User::find(1);
+   // return $user->address; // Devuelve la dirección del usuario
+
+   $post = Post::find(1);
+   dd($post->is_active);
 
 
 

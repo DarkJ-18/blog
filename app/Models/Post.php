@@ -19,6 +19,7 @@ class Post extends Model
         return [
             'published_at' => 'datetime', //convierte el campo published_at a un objeto de tipo datetime
             'is_active' => 'boolean' //convierte el campo is_active a un objeto de tipo boolean 
+            
 
         ];
     }
